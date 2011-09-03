@@ -104,7 +104,6 @@ public class SuperdryColorPicker extends Activity implements
 		ok = (Button) findViewById(R.id.ok);
 		ng = (Button) findViewById(R.id.ng);
 		ok.setOnClickListener(new View.OnClickListener() {
-			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent();
 				intent.putExtra("SelectedColor", mSelectedColor);
@@ -113,7 +112,6 @@ public class SuperdryColorPicker extends Activity implements
 			}
 		});
 		ng.setOnClickListener(new View.OnClickListener() {
-			@Override
 			public void onClick(View v) {
 				finish();
 			}
@@ -121,7 +119,6 @@ public class SuperdryColorPicker extends Activity implements
 
 	}
 
-	@Override
 	public void onChangeColor(float[] hsv) {
 		// TODO Auto-generated method stub
 		mSelectedColor = Color.HSVToColor(hsv);
