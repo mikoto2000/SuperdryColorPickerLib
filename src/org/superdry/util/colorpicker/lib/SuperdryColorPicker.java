@@ -2,7 +2,10 @@
  * SuperdryColorPickerLib
  * 
  * The MIT License
+ * 
+ * Copyright (c) 2011 mikoto2000
  * Copyright (c) 2011 superdry
+ * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
@@ -120,7 +123,6 @@ public class SuperdryColorPicker extends Activity implements
 	}
 
 	public void onChangeColor(float[] hsv) {
-		// TODO Auto-generated method stub
 		mSelectedColor = Color.HSVToColor(hsv);
 		colorCode.setText(String.format("#%02x%02x%02x",
 				Color.red(mSelectedColor), Color.green(mSelectedColor),
