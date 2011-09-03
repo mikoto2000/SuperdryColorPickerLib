@@ -219,7 +219,6 @@ public class SuperdryColorPickerView extends View {
 				inSlider = false;
 				inCircle = false;
 			}
-			break;
 		case MotionEvent.ACTION_MOVE:
 
 			float[] tempHSV = mHSV;
