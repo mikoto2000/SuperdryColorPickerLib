@@ -162,7 +162,7 @@ public class SuperdryColorPicker extends Activity implements
 	}
 
 	private int floatToByte(float x) {
-		int n = java.lang.Math.round(x);
+		int n = Math.round(x);
 		return n;
 	}
 

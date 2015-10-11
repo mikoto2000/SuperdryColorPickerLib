@@ -172,7 +172,7 @@ public class SuperdryColorPickerView extends View {
 	}
 
 	private int ave(int s, int d, float p) {
-		return s + java.lang.Math.round(p * (d - s));
+		return s + Math.round(p * (d - s));
 	}
 
 	private int interpColor(int colors[], float unit) {
@@ -226,7 +226,7 @@ public class SuperdryColorPickerView extends View {
 
 				inSlider = false;
 
-				float angle = (float) java.lang.Math.atan2(y, x);
+				float angle = (float) Math.atan2(y, x);
 				float unit = angle / (2 * PI);
 				if (unit < 0) {
 					unit += 1;
