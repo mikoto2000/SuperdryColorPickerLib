@@ -70,6 +70,8 @@ public class SuperdryColorPickerView extends View {
 
 	public void initView(int color) {
 
+		setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+
 		mColors = new int[] { 0xFFFF0000, 0xFFFF00FF, 0xFF0000FF, 0xFF00FFFF,
 				0xFF00FF00, 0xFFFFFF00, 0xFFFF0000 };
 		mPointerPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
